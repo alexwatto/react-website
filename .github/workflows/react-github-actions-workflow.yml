@@ -1,7 +1,5 @@
 on:
   push:
-    tags:
-      - '*'
 
 jobs:
   build:
@@ -47,7 +45,7 @@ jobs:
           aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
       # Copy the files from build folder to the S3 bucket
       - name: Deploy to S3
-        run: aws s3 sync . s3://react-github-actions --acl public-read
+        run: aws s3 sync . s3://alexwatto-live --acl public-read
         working-directory: react-github-actions-build
   release:
     runs-on: ubuntu-latest
