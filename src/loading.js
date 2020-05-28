@@ -10,15 +10,16 @@ export default class Loading extends React.Component {
     }
 
     componentDidMount() {
+
         setTimeout(() => {
-            fetch("https://jsonplaceholder.typicode.com/posts")
-            .then(response => response.json())
-            .then(json => this.setState({ done: true }));
+            this.setState({
+                done: true
+          })
         }, 7000);
     }
 
     render(){
-        return(
+        return( 
             <div>
                 {!this.state.done ? (
                     <div className="Preimage">
