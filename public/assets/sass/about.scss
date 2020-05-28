@@ -1,0 +1,167 @@
+.about {
+    width: 100%;
+    background: white;
+    z-index: 10;
+
+    .content {
+        width: 900px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 34px;
+        color: black;
+        text-align: center;
+        margin: 0;
+        letter-spacing: 6px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+
+    hr {
+        color: black;
+        margin-top: 30px;
+        background-color: black;
+        height: 1px;
+        width: 106px;
+        border: 0;
+    }
+
+    p.title {
+        color: #a4a4a4;
+        margin: 40px auto;
+        width: 300px;
+        line-height: 26px;
+        letter-spacing: 0;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    h4.title {
+        a {
+            color: $blue;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 26px;
+        color: black;
+        line-height: 1.2;
+        letter-spacing: 6px;
+        width: 100%;
+        position: relative;
+        font-weight: 400;
+    }
+
+    p {
+        text-align: center;
+        font-size: 14px;
+        width: 250px;
+        margin: 30px auto;
+        color: #a4a4a4;
+        line-height: 26px;
+        letter-spacing: 0;
+        position: relative;
+        font-weight: 300;
+    }
+
+    .column-one {
+        margin-top: 40px;
+        width: 300px;
+        float: left;
+        margin-bottom: 70px;
+        height: 350px;
+
+        .circle-one {
+            height: 100px;
+            position: relative;
+            margin: 0 auto;
+            border: 2px solid #f0f0f0;
+            background: url(../img/code.png) white no-repeat center center;
+            -moz-border-radius: 100px;
+            -webkit-border-radius: 100px;
+            border-radius: 100px;
+            width: 100px;
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+
+            &:hover {
+                border: 2px solid #0033c0;
+            }
+        }
+    }
+
+    .column-two {
+        margin-top: 40px;
+        width: 300px;
+        float: left;
+        margin-bottom: 70px;
+        height: 350px;
+
+        .circle-two {
+            height: 100px;
+            position: relative;
+            margin: 0 auto;
+            border: 2px solid #f0f0f0;
+            background: url(../img/bat.png) white no-repeat center center;
+            -moz-border-radius: 100px;
+            -webkit-border-radius: 100px;
+            border-radius: 100px;
+            width: 100px;
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+
+            &:hover {
+                border: 2px solid #0033c0;
+            }
+        }
+    }
+
+    .column-three {
+        margin-top: 40px;
+        width: 300px;
+        float: left;
+        margin-bottom: 70px;
+        height: 350px;
+
+        .circle-three {
+            height: 100px;
+            position: relative;
+            margin: 0 auto;
+            border: 2px solid #f0f0f0;
+            background: url(../img/tick.png) white no-repeat center center;
+            -moz-border-radius: 100px;
+            -webkit-border-radius: 100px;
+            border-radius: 100px;
+            width: 100px;
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+
+            &:hover {
+                border: 2px solid #0033c0;
+            }
+        }
+    }
+
+    hr.break {
+        margin-top: 30px;
+        background-color: #f2f2f2;
+        height: 2px;
+        width: 100%;
+        border: 0;
+    }
+}
