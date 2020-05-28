@@ -85,14 +85,11 @@ class NPInfo extends Component {
         const [song, artist, imageUrl, length, currentlength ] = [data.item.name, data.item.artists[0].name, data.item.album.images[0].url, data.item.duration_ms, data.progress_ms];
 
         function msToTime(duration) {
-          var
-            seconds = Math.floor((duration / 1000) % 60),
-            minutes = Math.floor((duration / (1000 * 60)) % 60),
-            minutes = (minutes < 10) ? "0" + minutes : minutes;
-            seconds = (seconds < 10) ? "0" + seconds : seconds;
-
-            return minutes + ":" + seconds;
-
+          var  seconds = Math.floor((duration / 1000) % 60)
+          var  secondsx = (seconds < 10) ? "0" + seconds : seconds;
+          var  minutes = Math.floor((duration / (1000 * 60)) % 60)
+          var  minutesx = (minutes < 10) ? "0" + minutes : minutes;
+          return minutesx + ":" + secondsx;
         }
         const songlength = msToTime(length)
         const songLengthx = (length / 60000).toFixed(2);
