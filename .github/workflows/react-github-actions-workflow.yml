@@ -48,8 +48,11 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
       - name: Deploy to S3
-        run: aws s3 sync . s3://alexwatto-live --acl public-read
+        run: aws s3 sync . s3://alexwatto.co.uk --acl public-read
         working-directory: react-github-actions-build
+      - name: Deploy to S3
+        run: aws s3 sync . s3://www.alexwatto.co.uk --acl public-read
+        working-directory: react-github-actions-build  
   release:
     runs-on: ubuntu-latest
     needs: deploy
