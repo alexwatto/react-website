@@ -8,6 +8,11 @@ jobs:
     steps:
       - name: Clone repository
         uses: actions/checkout@v2
+      - name: Create .env
+        uses: "finnp/create-file-action@master"
+        env:
+          FILE_NAME: ".env"
+          FILE_DATA: "${{ secrets.AWS_ACCESS_KEY_ID }}"
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
