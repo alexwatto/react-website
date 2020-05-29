@@ -23,8 +23,11 @@ jobs:
       - name: Create .env
         uses: "finnp/create-file-action@master"
         env:
-          FILE_NAME: "test.txt"
-          FILE_DATA: "${{ secrets.AWS_ACCESS_KEY_ID }}"
+          FILE_NAME: ".env"
+          FILE_DATA: "REACT_APP_SPOTIFY_CLIENT_ID=${{ secrets.REACT_APP_SPOTIFY_CLIENT_ID }}\n
+                      REACT_APP_SPOTIFY_CLIENT_SECRET=${{ secrets.REACT_APP_SPOTIFY_CLIENT_SECRET }}\n
+                      REACT_APP_SPOTIFY_REFRESH_TOKEN=${{ secrets.REACT_APP_SPOTIFY_REFRESH_TOKEN }}\n
+                      REACT_APP_SPOTIFY_ACCESS_KEY=${{ secrets.REACT_APP_SPOTIFY_ACCESS_KEY }}\n"
       - name: show files
         run: ls -la
       - name: show files
