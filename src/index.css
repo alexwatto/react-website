@@ -146,6 +146,20 @@
     overflow: hidden;
     position: relative;
     display:block;
+    }
+      .gif{
+        background:url(./assets/img/loading.gif);
+        
+      }
+    
+  }
+  @media only screen and (max-width: 768px) {
+  .gif{
+    background:url(./assets/img/loading-mobile.gif);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+        top: -150px;
   }
 }
 
