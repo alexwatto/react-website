@@ -15,7 +15,7 @@ export default class Loading extends React.Component {
             this.setState({
                 done: true
           })
-        }, 7000);
+        }, 6000);
     }
 
     render(){
@@ -25,7 +25,7 @@ export default class Loading extends React.Component {
                     <div className="Preimage">
                     <div className="blue">
                         <div className="item">
-                        <img className="gif" src="./assets/img/loading.gif" alt="loading the website" />
+                        <div className="gif" alt="loading the website" />
                         </div>
                     </div>
                 </div>
