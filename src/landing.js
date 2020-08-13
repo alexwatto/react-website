@@ -4,7 +4,7 @@ import Spotify from "./SpotifyComponents/spotify"
 import PrevPlayed from "./SpotifyComponents/previous-played"
 
 import About from "./about-me"
-import Nav from "./nav"
+import Main from "./navbar"
 //import MyWork from "./work"
 import Construction from "./construction"
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -87,7 +87,7 @@ export default class Landing extends React.Component {
                         </div>
                     </div>
                 </div>
-                <Nav />
+                <Main />
                 <About />
                 <Construction />
                 </FadeIn>
