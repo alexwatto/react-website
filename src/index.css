@@ -347,3 +347,11 @@
     width: 90%;
   }
 }
+
+.nav {
+  color: white;
+  text-decoration: none;
+}.nav:hover{
+  color: #adadad;
+  text-decoration: underline;
+}

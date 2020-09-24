@@ -127,7 +127,7 @@ class Navbar extends React.Component {
             }}
             onClick={this.props.onClick}
           >
-            <a href={this.props.children}>{this.props.children}</a>
+            <a className="nav" href={this.props.children}>{this.props.children}</a>
           </div>
           <div style={styles.line} />
         </div>
