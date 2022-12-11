@@ -5,27 +5,27 @@ export default class Nav extends React.Component {
         return(
             <header className="menu">
 
-                <nav class="navbar navbar-light amber lighten-4 mb-4">
+                <nav className="navbar navbar-light amber lighten-4 mb-4">
 
-                    <a class="navbar-brand" href="#">Navbar</a>
+                    <a className="navbar-brand" href="#">Navbar</a>
 
 
-                    <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
+                    <button className="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
                     aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="animated-icon1"><span></span><span></span><span></span></div>
+                    <div className="animated-icon1"><span></span><span></span><span></span></div>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent20">
 
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <ul className="navbar-nav mr-auto">
+                        <li className="nav-item active">
+                        <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <li className="nav-item">
+                        <a className="nav-link" href="#">Features</a>
                         </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <li className="nav-item">
+                        <a className="nav-link" href="#">Pricing</a>
                         </li>
                     </ul>
 

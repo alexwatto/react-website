@@ -12,7 +12,7 @@ export default class About extends React.Component {
                     <hr/>
                 
                     <p className="">
-                        My name is Alex <b>'Watto'</b> Watson currently working at <strong>MMT Digital</strong> as a Cloud Systems Engineer.
+                        My name is Alex <b>`&apos;Watto`&apos;`</b> Watson currently working at <strong>MMT Digital</strong> as a Cloud Systems Engineer.
                         < br/>
                         I have been programming with various different languages for 10 years and recently began my journey into DevOps while working as a placement student at MMT
 

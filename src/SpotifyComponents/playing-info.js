@@ -84,6 +84,7 @@ class NPInfo extends Component {
         const data = await response.json()
         const [song, artist, imageUrl, length, currentlength ] = [data.item.name, data.item.artists[0].name, data.item.album.images[0].url, data.item.duration_ms, data.progress_ms];
 
+        // eslint-disable-next-line no-inner-declarations
         function msToTime(duration) {
           var  seconds = Math.floor((duration / 1000) % 60)
           var  secondsx = (seconds < 10) ? "0" + seconds : seconds;
@@ -105,6 +106,7 @@ class NPInfo extends Component {
         
         this.setState({ song, artist, imageUrl, songlength, currentposition, barstate, timeleft })
       } catch (err3) {
+        console.warn(`Error fetching spotify data: ${err3}`)
       }
     } catch (err5) {
       console.warn(`Error fetching spotify data: ${err5}`)

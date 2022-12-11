@@ -41,7 +41,7 @@ export default class Landing extends React.Component {
                                 <img src="./assets/img/logo_noText.svg" className="App-logo" alt="logo" />
                                 <Spotify />
                                 <div className="text">
-                                    <h2>Alex 'Watto' Watson</h2>
+                                    <h2>Alex &lsquo;Watto&lsquo; Watson</h2>
                                     <hr />
                                     <h3>My socials</h3>
                                     <div className="social">
@@ -65,11 +65,11 @@ export default class Landing extends React.Component {
                                         <div className="instagram-logo">
                                             <svg className="hidden" width="0" height="0" id="hide">
                                                 <radialGradient id="rg" r="150%" cx="30%" cy="107%">
-                                                <stop stop-color="#fdf497" offset="0" />
-                                                <stop stop-color="#fdf497" offset="0.05" />
-                                                <stop stop-color="#fd5949" offset="0.45" />
-                                                <stop stop-color="#d6249f" offset="0.6" />
-                                                <stop stop-color="#285AEB" offset="0.9" />
+                                                <stop stopColor="#fdf497" offset="0" />
+                                                <stop stopColor="#fdf497" offset="0.05" />
+                                                <stop stopColor="#fd5949" offset="0.45" />
+                                                <stop stopColor="#d6249f" offset="0.6" />
+                                                <stop stopColor="#285AEB" offset="0.9" />
                                                 </radialGradient>
                                             </svg>
                                         </div>
@@ -80,7 +80,7 @@ export default class Landing extends React.Component {
                                         Hello and welcome to my portfolio
                                         <br />
                                     </p>
-                                    <div class="scroll-down"></div>
+                                    <div className="scroll-down"></div>
                                 </div>
                                 
                             </div>
@@ -94,11 +94,11 @@ export default class Landing extends React.Component {
                 <div className="instagram-logo">
                     <svg className="hidden" width="0" height="0" id="hide">
                         <radialGradient id="rg" r="150%" cx="30%" cy="107%">
-                        <stop stop-color="#fdf497" offset="0" />
-                        <stop stop-color="#fdf497" offset="0.05" />
-                        <stop stop-color="#fd5949" offset="0.45" />
-                        <stop stop-color="#d6249f" offset="0.6" />
-                        <stop stop-color="#285AEB" offset="0.9" />
+                        <stop stopColor="#fdf497" offset="0" />
+                        <stop stopColor="#fdf497" offset="0.05" />
+                        <stop stopColor="#fd5949" offset="0.45" />
+                        <stop stopColor="#d6249f" offset="0.6" />
+                        <stop stopColor="#285AEB" offset="0.9" />
                         </radialGradient>
                     </svg>
                 </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Image } from './player';
 
+
 class NPImage extends Component {
   constructor() {
     super()
@@ -88,7 +89,7 @@ class NPImage extends Component {
         const timeleft = ((length - currentposition) / 60000).toFixed(2);
         this.setState({ song, artist, imageUrl, songlength, currentposition, barstate, timeleft })
       } catch (err3) {
-
+        console.warn(`Error fetching spotify data: ${err3}`)
       }
     } catch (err5) {
       console.warn(`Error fetching spotify data: ${err5}`)
