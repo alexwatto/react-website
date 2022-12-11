@@ -97,11 +97,13 @@ class NPPlaylist extends Component {
             this.setState({ name, link })
 
           } catch (err3) {
+            console.warn(`Error fetching spotify data: ${err3}`)
       }
       } catch (err5) {
         console.warn(`Error fetching spotify data: ${err5}`)
       }      
       } catch (err3) {
+        console.warn(`Error fetching spotify data: ${err3}`)
 
       }
     } catch (err5) {

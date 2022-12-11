@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 
 class Navbar extends React.Component {
@@ -75,6 +76,7 @@ class Navbar extends React.Component {
       );
     }
   }
+
   
   class MenuItem extends React.Component {
     constructor(props) {
@@ -143,7 +145,7 @@ class Navbar extends React.Component {
       };
     }
   
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
       if (nextProps.open !== this.state.open) {
         this.setState({ open: nextProps.open });
       }
@@ -194,7 +196,7 @@ class Navbar extends React.Component {
       };
     }
   
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
       if (nextProps.open !== this.state.open) {
         this.setState({ open: nextProps.open });
       }
@@ -247,6 +249,7 @@ class Navbar extends React.Component {
         <div
           style={styles.container}
           onClick={
+            // eslint-disable-next-line react/prop-types
             this.props.onClick
               ? this.props.onClick
               : () => {

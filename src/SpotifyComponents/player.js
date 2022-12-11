@@ -1,5 +1,7 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import './../index.scss';
+
 
 const Image = props => {
   return (

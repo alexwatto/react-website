@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React, { Component } from 'react'
 import Songs from './songs';
 
@@ -15,7 +16,7 @@ class PrevPlayed extends Component {
     }
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     window.addEventListener('resize', this.handleWindowSizeChange);
   }
   
@@ -107,6 +108,7 @@ class PrevPlayed extends Component {
         //const timeleft = ((length - currentposition) / 60000).toFixed(2); 
         this.setState({ song, artist, imageUrl })
       } catch (err3) {
+        console.warn(`Error fetching spotify data: ${err3}`)
       }
     } catch (err5) {
       console.warn(`Error fetching spotify data: ${err5}`)
